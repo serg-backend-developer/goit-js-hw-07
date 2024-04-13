@@ -1,0 +1,178 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 16px;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: #fafafa;
+	color: #212121;
+	line-height: 1.5;
+}
+
+.gallery {
+	list-style: none;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr); /* Три стовпці */
+	gap: 48px 24px; /* Відступ між зображеннями */
+}
+
+.gallery-img {
+	width: 360px;
+	height: 300px;
+}
+
+ul {
+	list-style: none;
+	padding: 16px;
+	color: #2e2f42;
+	width: fit-content;
+}
+
+.item {
+	margin-bottom: 24px;
+	background-color: #f6f6fe;
+	border-radius: 8px;
+}
+.item ul li {
+	border-radius: 4px;
+	border: 1px solid #808080;
+	padding: 8px 16px; /* Відступ всередині рамки */
+	margin-bottom: 8px; /* Відступ між елементами списку */
+}
+.item h2 {
+	margin: 0;
+	margin-left: 16px; /* Відступ зліва */
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 1.33; /* 133.333% */
+	letter-spacing: 0.96px;
+}
+.item li {
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.5; /* 150% */
+	letter-spacing: 0.64px;
+	width: 360px;
+	height: 40px;
+}
+
+#name-input {
+	width: 360px;
+	height: 40px;
+	border-radius: 4px;
+	border: 1px solid #808080;
+	padding-left: 16px; /* Відступ зліва */
+	margin-top: 8px; /* Відступ зверху */
+	margin-bottom: 8px; /* Відступ знизу */
+	font-size: 16px;
+	letter-spacing: 0.64px;
+}
+
+h1,
+#name-output {
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 1.33; /* 133.333% */
+}
+
+.login-form {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 8px;
+	padding: 24px;
+	background-color: white;
+	width: fit-content;
+}
+
+.login-form label {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px; /* 150% */
+	letter-spacing: 0.64px;
+	gap: 8px;
+}
+.login-form input {
+	width: 360px;
+	height: 40px;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+}
+
+button {
+	cursor: pointer;
+	padding: 8px 16px;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	border-radius: 8px;
+	background-color: #4e75ff;
+	height: 40px;
+	color: white;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 24px; /* 150% */
+	letter-spacing: 0.64px;
+	margin-top: 16px;
+}
+
+button:hover {
+	background-color: #6c8cff;
+}
+.widget {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 100px 88px;
+	border-radius: 8px;
+	background: #fff;
+}
+
+[data-destroy] {
+	cursor: pointer;
+	padding: 8px 16px;
+	border-radius: 8px;
+	background: #ff4e4e;
+	height: 40px;
+	color: white;
+	font-size: 16px;
+	margin-top: 16px;
+}
+
+[data-destroy]:hover {
+	background: #ff7070;
+}
+
+#controls input {
+	border-radius: 8px;
+	border: 1px solid #808080;
+	height: 40px;
+	padding: 8px 72px;
+}
+
+#boxes {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin-top: 32px;
+}
+
+#controls {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	gap: 16px;
+}
