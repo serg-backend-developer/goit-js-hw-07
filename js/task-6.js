@@ -3,9 +3,6 @@ const createBtn = document.querySelector("[data-create]");
 const destroyBtn = document.querySelector("[data-destroy]");
 const boxesContainer = document.querySelector("#boxes");
 
-createBtn.addEventListener("click", createBoxes);
-destroyBtn.addEventListener("click", destroyBoxes);
-
 function createBoxes(amount) {
 	const boxes = [];
 
